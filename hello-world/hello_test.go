@@ -1,6 +1,8 @@
-package main
+package hello_world
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestHello(t *testing.T) {
 	got := Hello()
