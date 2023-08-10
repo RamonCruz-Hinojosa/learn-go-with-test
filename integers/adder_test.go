@@ -1,10 +1,8 @@
 package integers
 
-import "testing"
-
-func Add(x, y int) int {
-	return 0
-}
+import (
+	"testing"
+)
 
 func TestAdder(t *testing.T) {
 	sum := Add(2, 2)
