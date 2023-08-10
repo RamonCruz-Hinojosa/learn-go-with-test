@@ -1,6 +1,12 @@
 package hello_world
 
-func Hello() string {
+import "fmt"
+
+func Hello(name string) string {
 
 	return "Hello, world"
+}
+
+func main() {
+	fmt.Println(Hello("world"))
 }
