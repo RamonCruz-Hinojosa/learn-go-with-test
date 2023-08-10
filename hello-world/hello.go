@@ -1,22 +1,33 @@
 package hello_world
 
-const englishHelloPrefix = "Hello "
-const spanishHelloPrefix = "Hola, "
-const frenchHelloPrefix = "Bonjour, "
+const (
+	englishHelloPrefix = "Hello "
+	spanishHelloPrefix = "Hola, "
+	frenchHelloPrefix  = "Bonjour, "
+	frogHelloPrefix    = "ribbit, "
+
+	french  = "French"
+	spanish = "Spanish"
+)
 
 func Hello(name string, language string) string {
 	if name == "" {
 		name = "world"
 	}
 
-	prefix := englishHelloPrefix
+	return greetingPrefix(language) + name
+}
 
+func greetingPrefix(language string) (prefix string) {
 	switch language {
-	case "Spanish":
+	case spanish:
 		prefix = spanishHelloPrefix
-	case "French":
+	case french:
 		prefix = frenchHelloPrefix
+	case "frog":
+		prefix = frogHelloPrefix
+	default:
+		prefix = englishHelloPrefix
 	}
-
-	return prefix + name
+	return
 }
