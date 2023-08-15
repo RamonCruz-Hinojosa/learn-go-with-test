@@ -61,7 +61,7 @@ func main() {
 	// // var ages [3]int = [3]int{20, 25, 30}
 	// var ages = [3]int{20, 25, 30}
 
-	// names := [4]string{"yoshi", "mario", "peach", "bowser"}
+	var names = []string{}
 	// names[1] = "luigi"
 
 	// fmt.Println(ages, len(ages))
@@ -78,6 +78,9 @@ func main() {
 	// rangeOne := names[1:3]
 	// rangeTwo := names[2:]
 	// rangeThree := names[:3]
+	rangeFour := names[1:]
+
+	fmt.Println(rangeFour)
 
 	// fmt.Println(rangeOne, rangeTwo, rangeThree)
 
@@ -115,7 +118,7 @@ func main() {
 	// 	x++
 	// }
 
-	names := []string{"yoshi", "mario", "peach", "bowser", "luigi"}
+	// names := []string{"yoshi", "mario", "peach", "bowser", "luigi"}
 
 	// for i := 0; i < len(names); i++ {
 	// 	fmt.Println(names[i])
