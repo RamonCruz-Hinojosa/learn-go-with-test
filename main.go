@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // practice exercises here
 func main() {
 
@@ -61,7 +59,7 @@ func main() {
 	// // var ages [3]int = [3]int{20, 25, 30}
 	// var ages = [3]int{20, 25, 30}
 
-	var names = []string{}
+	// var names = []string{}
 	// names[1] = "luigi"
 
 	// fmt.Println(ages, len(ages))
@@ -78,9 +76,9 @@ func main() {
 	// rangeOne := names[1:3]
 	// rangeTwo := names[2:]
 	// rangeThree := names[:3]
-	rangeFour := names[1:]
+	// rangeFour := names[1:]
 
-	fmt.Println(rangeFour)
+	// fmt.Println(rangeFour)
 
 	// fmt.Println(rangeOne, rangeTwo, rangeThree)
 
@@ -128,12 +126,12 @@ func main() {
 	// 	fmt.Printf("the value at index %v is %v \n", index, value)
 	// }
 
-	for _, value := range names {
-		fmt.Printf("the value is %v \n", value)
-		value = "new string"
-	}
+	// for _, value := range names {
+	// 	fmt.Printf("the value is %v \n", value)
+	// 	value = "new string"
+	// }
 
-	fmt.Println(names)
+	// fmt.Println(names)
 }
 
 func Hello() {}
