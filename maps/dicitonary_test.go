@@ -13,10 +13,22 @@ func TestSearch(t *testing.T) {
 
 	t.Run("unknown word", func(t *testing.T) {
 		_, got := dictionary.Search("unknown")
-		want := "could not find the word you were looking for"
 
 		assertError(t, got, ErrNotFound)
 	})
+}
+
+func TestAdd(t *testing.T) {
+	dictionary := Dictionary{}
+	dictionary.Add("test", "this is just a test")
+
+	want := "this is just a test"
+	got, err := dictionary.Search("test")
+	if err != nil {
+		t.Fatal("should find added word:", err)
+	}
+
+	assertStrings(t, got, want)
 }
 
 func assertStrings(t testing.TB, got, want string) {
